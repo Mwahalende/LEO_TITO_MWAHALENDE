@@ -1,5 +1,5 @@
 const express=require('express');
-const { get } = require('mongoose');
+//const { get } = require('mongoose');
 const app=express();
 app.set('views engine','ejs')
 app.use(express.static('public'));
