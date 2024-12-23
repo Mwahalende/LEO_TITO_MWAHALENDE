@@ -1,76 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body{
-            background-color: aliceblue;
-            color: white;
-            overflow: scroll;
-        }
-.box{
-display: flex;
-position: relative;
-background-color: rgba(246, 246, 253, 0);
-height: 230px;
-padding: 5px;
-margin: auto;
- position: relative;
-
+<style>
+body{
+background-color: rgb(7, 92, 4);
 }
-@keyframes leo2{
-    0%{left: -0%;}
-    50%{left: 50%;}
-    100%{left: -100%;}
-}
-.box video{
-margin: 5px;
-height: 220px;
-width: 400px;
-margin-left: 3px;
-}
-h1{
-text-align: center;
-font-size: 50px;
-color: aliceblue;
-}
-.box2 video{
-height: 300px;
+.one1{
+height:2000px;
 width: 100%;
-}
-.box2 a{
-text-align: center;
-text-decoration: none;
-}
-button{
-left: 700px;
-box-shadow: 2px 3px 1px gray;
-margin-left: 50%;
-}
-.box2 {
-    height: 840px;
-    width: 100%;
-    padding: 5px;
-    background-color: rgba(3, 18, 67, 0.776);
-    font-size: 30px;
-}
-.end{
-display: flex;
-position: relative;
-background-color:rgba(8, 8, 8, 0.763);
-height: 500px;
-width: 100%;
-padding: auto;
-margin: auto;
-padding-left: 28px;
-overflow: auto;
-}
-.one img{
-height: 450px;
-width: 400px;
-border: 1px solid rgba(0, 0, 255, 0);
+border: 2px solid blue;
 margin: auto;
 border-radius: 10px;
+box-shadow: 1px 1px 1px black;
 }
+.video{
+position: relative;
+height: 300px;
+display: flex;
+border: 1px solid rgb(45, 36, 36);
+margin: auto;
+margin-top: 30px;
+width: 1230px;
+box-shadow: 1px 1px 1px black;
+background-image: url("IMG-20241115-WA0011.jpg");
+}
+.vd{
+height:200px ;
+width: 500px;
+margin: 2px;
+margin-top: 40px;
+
+}
+.navi{
+height:280px ;
+width: 220px;
+border: 1px solid rgb(16, 82, 2);
+margin: 5px;
+border-radius: 5px;
+box-shadow: 5px 5px 5px rgb(6, 6, 6);
+}
+video{
+height:200px ;
+width: 350px;
+//border: 1px solid blue;
+margin: 0.00004px;
+border-radius: 5px;
+box-shadow: 1px 1px 1px black;   
+}
+h1{
+margin: auto;
+width: 500px;
+}
+.video1{
+position: relative;
+height: 390px;
+display: flex;
+border: 1px solid rgb(45, 36, 36);
+margin: auto;
+background-color: black;
+margin-top: 30px;
+width: 1230px;
+border-radius: 10px;
+box-shadow: 1px 1px 1px black;
+}
+.vd1{
+height:380px ;
+width: 610px;
+margin: auto;
+background-color: black;
+margin-right: 0px;
+border-radius: 10px;
+}
+.vd2{
+height:380px ;
+width: 610px;
+margin: auto;
+margin-left: 0px;
+}
+.vd2 video{
+height: 380px;  
+width: 610px;
+margin-left: 5px;
+}
+h2{
+background-color: white;
+margin-top: 0px;
+}
+.des{
+padding-left: 10px;
+}
+
 .one{
 height: 450px;
 width: 400px;
@@ -87,7 +106,69 @@ animation-timing-function: ease-out;
 animation-play-state:running;
 animation-delay: -15s;
 }
-ul{
+
+.end{
+display: flex;
+position: relative;
+background-color:rgba(8, 8, 8, 0.763);
+height: 500px;
+width: 100%;
+padding: auto;
+margin: auto;
+padding-left: 28px;
+overflow: auto;
+}
+
+.one img{
+height: 450px;
+width: 400px;
+border: 1px solid rgba(0, 0, 255, 0);
+margin: auto;
+border-radius: 10px;
+}
+
+@keyframes leo2{
+    0%{left: -0%;}
+    50%{left: 50%;}
+    100%{left: -100%;}
+}
+
+.i{
+position: absolute;
+height: 200px;
+width: 140px;
+float: left;
+z-index: 1;
+padding-bottom: 5px;
+padding-top: 5px;
+}
+.e button{
+    height: 50px;
+    width: 80px;
+margin-bottom: 5px;
+font-size: 35px;
+}
+.i .io{
+    height: 30px;
+    width: 120px;
+    font-size: 20px;
+    display: none;  
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgba(123, 72, 72, 0.662);
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+.io a{
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+}enduser{
+    background-color: rgb(0, 0, 11);
+    }
+
+    ul{
     list-style-type: none;
     text-align: center;
     }
@@ -104,134 +185,144 @@ ul{
     width: 60px;
     height: 30px;
     }
-    a{
-    width: 50px;
-    height: 30px;
-    }
-    img{
-        width: auto;
-        height: auto;
-    }
-.i{
-position: absolute;
-height: 200px;
-width: 200px;
-float: left;
-z-index: 1;
-padding-bottom: 5px;
-overflow: auto;
-padding-top: 5px;
-}
-.e button{
-    height: 50px;
-    width: 80px;
-    margin-left: 2px;
-margin-bottom: 5px;
-font-size: 35px;
-}
-.i .io{
-    height: 50px;
-    width: 180px;
-    margin-left: 2px;
-    font-size: 20px;
-    display: none;  
-    margin: auto;
-    margin-top: 10px;
-    background-color: rgba(123, 72, 72, 0.662);
-    text-align: center;
-    border-radius: 5px;
-    padding-top: 15px;
-}
-.io a{
-    margin-top: 5px;
-    text-align: center;
-    text-decoration: none;
-}
-    </style>
+</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leo Galaxy</title>
+    <title>Document</title>
 </head>
-<body background="IMG-20241115-WA0011.jpg"  onclick="top()">
-<div class="e"> <button  type="button"  onclick="my()" ondblclick="m()">&#9776</button><br></div>
-<div id="demi" class="i">
-<div id="dem" class="io"><a href="">name</a></div>
-<div id="de" class="io"><a href="">location</a></div>
-<div id="demu" class="io"><a href="">amizing</a></div>
-<div id="den" class="io"><a href="">location</a></div>
-<div id="deno" class="io"><a href="">back</a></div>
+<body>
+    <div class="one1">
+<h1 style="color: white;">ED QUEST</h1>
+<div class="video">
+<div class="navi">
+    <div class="e"> <button  type="button"  onclick="my()" ondblclick="m()">&#9776</button><br></div>
+    <div id="demi" class="i">
+    <div id="dem" class="io"><a href="#1m">masai</a></div>
+    <div id="de" class="io"><a href="#2m">Sukuma</a></div>
+    <div id="demu" class="io"><a href="">Nyakyusa</a></div>
+    <div id="den" class="io"><a href="">WAZARAMO</a></div>
+    <div id="deno" class="io"><a href="">back</a></div>
+</div></div>
+<div class="vd"><video id="on" controls="" autoplay muted>
+    <source src="Diamond_Platnumz_-_Mdogo_Mdogo__Official_Video_(720p).mp4">
+    </video></div>
+<div class="vd"><video id="on" controls="" autoplay muted>
+    <source src="Alikiba_-_UTU__Official_Music_Video_(720p).mp4">
+    </video></div>
+<div class="vd"><video id="on" controls="" autoplay muted>
+    <source src="Jux_Ft_Diamond_Platnumz_--_Ololufe_Mi__Official_Video_(720p).mp4">
+    </video></div>
 </div>
-<h1>EDUQUEST</h1>
-<div class="box">
+
+
+<div background="IMG-20241115-WA0015.jpg" class="end" >
+    <div class="one" ><img src="IMG-20241115-WA0024.jpg"></div>
+    <div class="one"><img src="IMG-20241115-WA0016.jpg"></div>
+    <div class="one" style="margin-right: 100px;"><img src="IMG-20241115-WA0021.jpg"></div>
+     </div>
+
+<div class="video1">
+<div class="vd1" id="1m">
+<h2 >THIS IS MASAI TRIBE FROM ARUSHA TANZANIA.</h2>
+<div class="des">
+<p style="color: yellow;">Tanzania offers diverse tourism experiences, from the iconic 
+    Serengeti and Ngorongoro Crater to the tropical beaches of Zanzibar. Visitors can
+     explore rich wildlife, vibrant cultures, and breathtaking landscapes. Kilimanjaro,
+     Africa's tallest peak, attracts trekkers, while the island of Mafia provides serene marine adventures, 
+     making Tanzania a top global destination.</p>
+</div>
+</div>
+<div class="vd2">
 <video id="on" controls="" autoplay muted>
 <source src="Diamond_Platnumz_-_Mdogo_Mdogo__Official_Video_(720p).mp4">
 </video>
-<video id="leo2" style="margin-left: 20px;" controls="" autoplay muted>
-<source src="Alikiba_-_UTU__Official_Music_Video_(720p).mp4">
-</video>
-<video  id="leo3" controls="" autoplay muted>
-<source src="Jux_Ft_Diamond_Platnumz_--_Ololufe_Mi__Official_Video_(720p).mp4">
-</video>
 </div>
-<div class="box1">
-<p>Utalii wa taifa letu la tanzania unaboreshwa na watanzania wenyewe   </p>
 </div>
-<div class="box2">
-    <p style="margin: auto;width: 400px;font-size: 30px;">MY COUNTRY IS AFRICA</p>
-<video  controls="" autoplay muted style="width: 1000px;height: 500px;margin-left: 150px;border: 0.5 solid black;margin-top: 20px;"">
-    <source src="Diamond_Platnumz_-_Mdogo_Mdogo__Official_Video_(720p).mp4">
-</video><br>Tanzania offers diverse tourism experiences, from the iconic 
-Serengeti and Ngorongoro Crater to the tropical beaches of Zanzibar. Visitors can
- explore rich wildlife, vibrant cultures, and breathtaking landscapes. Kilimanjaro,
- Africa's tallest peak, attracts trekkers, while the island of Mafia provides serene marine adventures, 
- making Tanzania a top global destination.
-<p style="font-size: 30px;margin-left: 100px;">MASAI SOCIETY,ATTRACTIVE ANIMALS AND BIG FOREST AT EAST  AFRICA</p>
-<button type="button" ><a style="font-size: 25PX;" href="https://www.safaribookings.com/tours/tanzania?k=Tanzania%20Vacations&msclkid=3a3af13a4b0e15ae9d5e965dbd75e8ac&utm_source=bing&utm_medium=cpc&utm_campaign=07.%20Safari%20Countries%20(USD)&utm_term=Tanzania%20Vacation&utm_content=TZ%20-%20Safari%20Tours%20(Tanzania)">read more..</a></button>
-</div>
-<div background="IMG-20241115-WA0015.jpg" class="end" >
-<div class="one" ><img src="IMG-20241115-WA0024.jpg"></div>
-<div class="one"><img src="IMG-20241115-WA0016.jpg"></div>
-<div class="one" style="margin-right: 100px;"><img src="IMG-20241115-WA0021.jpg"></div>
 
-</div>
-<div class="enduser">
-    <ul>
-    <li><a href="MAIN BODY.html.html">HOME</a></li>
-    </ul>
-    <ul>
-    <li><a href="">CONTACT</a></li>
-    </ul>
-    <ul>
-    <li><a href="">ABOUT</a></li>
-    </ul>
-    </ul>
-    
-    <ul>
-    <li><a href="">Platforms</a></li>
-    </ul>
-    <ul>
-    <li><a href="">LEO FOUNDATION DEVELOPERS</a></li>
-    </ul>
+<div class="video1">
+    <div class="vd1" id="2m">
+    <h2 >THIS IS SUKUMA TRIBE FROM MWANZA TANZANIA.</h2>
+    <div class="des">
+    <p style="color: yellow;">Wasukuma ni moja ya makabila makubwa nchini Tanzania, wakipatikana zaidi katika mikoa ya Mwanza, Shinyanga, Simiyu, na Geita. Jina "Wasukuma" linahusiana na eneo lao la kaskazini mwa Ziwa Viktoria. Kabila hili lina asili kutoka kwa Wabantu waliohamia Tanzania takribani miaka 2000 iliyopita.
+
+        Wasukuma walijikita katika shughuli za ufugaji wa ng’ombe, kilimo cha mazao kama mtama na mahindi, na uvuvi katika Ziwa Viktoria. Mfumo wa utawala wa kijadi uliongozwa na machifu (bafumu), waliodumisha amani na tamaduni. Mila zao zilijumuisha ngoma za kitamaduni kama bugobogobo na sukumina, imani za mizimu, na matambiko kwa ajili ya mvua au mavuno mazuri. Pia walihusudu sanaa za ususi na ufinyanzi.
+        
+        Mababu na mabibi wa Wasukuma walikuwa wahifadhi wa maarifa ya kijadi, wakipitisha maarifa hayo kupitia methali, hadithi, na desturi. Wakati wa ukoloni, Wasukuma walihusika katika kilimo cha biashara, hasa pamba, ambayo ilibadilisha maisha yao ya kiuchumi. Urbanization pia iliathiri baadhi ya Wasukuma, huku wengi wakibaki vijijini wakidumisha utamaduni wao.
+        
+        Leo, Wasukuma wamejumuisha mabadiliko ya kisasa katika maisha yao lakini bado wanathamini na kusherehekea mila zao. Tamaduni zao za asili zinabaki kuwa alama muhimu za utambulisho wao katika historia na maisha ya kisasa
+    </p>
     </div>
-<script>
-var x=window.open();
-function my(){
-document.getElementById("dem").style.display="block";
-document.getElementById("de").style.display="block";
-document.getElementById("demu").style.display="block";
-document.getElementById("demi").style.backgroundColor="aliceblue";
-document.getElementById("demi").style.border="0.6px solid grey";
-document.getElementById("demi").style.boxShadow="2px 3px 2px gray";
-document.getElementById("demi").style.overflow="auto";
-document.getElementById("den").style.display="block";
-document.getElementById("deno").style.display="block";
-}
-function top(){
-location.assign("tourosm.html");
-}
-function m(){
-document.getElementById("demi").style.display="none";
-}
-</script>
+    </div>
+    <div class="vd2">
+    <video id="on" controls="" autoplay muted>
+    <source src="Diamond_Platnumz_-_Mdogo_Mdogo__Official_Video_(720p).mp4">
+    </video>
+    </div></div>
+
+    <div class="video1">
+        <div class="vd1" id="2m">
+        <h2 >THIS IS Nyakyusa TRIBE FROM MBEYA TANZANIA.</h2>
+        <div class="des">
+        <p style="color: yellow;">
+            Wanyakyusa ni kabila la Wabantu linalopatikana kusini mwa Tanzania,
+            hasa katika Mkoa wa Mbeya, karibu na Ziwa Nyasa. Wanajulikana kwa maisha yao ya kijadi yaliyohusisha kilimo, ufugaji, na uvuvi. Mazingira yao yenye rutuba yaliwafanya kuwa wakulima hodari wa mazao kama ndizi, mahindi, mihogo, na viazi. Mazao haya yalihusiana moja kwa moja na utamaduni wao wa kula, pamoja na biashara ndogo za kubadilishana bidhaa. Ufugaji wa ng’ombe, mbuzi, na kuku ulikuwa sehemu muhimu ya uchumi wao, huku mifugo ikionekana kama ishara ya heshima na utajiri. Katika jamii ya Wanyakyusa, makazi yalipangwa kwa mfumo wa kijiji unaoitwa ng’anda, ambao uliimarisha mshikamano wa kijamii. Waliendesha maisha yao kwa kufuata mila na desturi zilizorithiwa, ikiwa ni pamoja na ibada za mababu na matambiko kwa mizimu, hasa kwa ajili ya mvua na mavuno mazuri. Ngoma za kitamaduni, nyimbo, na sherehe za mavuno au harusi zilikuwa sehemu muhimu ya maisha yao ya kijadi. Walikuwa na mfumo wa utawala wa kijadi unaoongozwa na machifu waliokuwa na jukumu la kusimamia amani na masuala ya kijamii. Kuja kwa wakoloni Wajerumani na baadaye Waingereza kulileta mabadiliko makubwa, ikiwa ni pamoja na kilimo cha biashara kama kahawa na chai. Dini za Kikristo zilianza kuenea, zikichanganya na mila za kijadi. Leo, Wanyakyusa wameshika nafasi muhimu katika kilimo na maendeleo ya kitaifa, huku wengi wakihamia mijini kwa elimu na ajira. Licha ya mabadiliko ya kisasa, mila zao nyingi, lugha ya Kinyakyusa,
+             na tamaduni za kijadi bado zimedumu kama alama muhimu za utambulisho wao wa kihistoria.  
+        </p>
+        </div>
+        </div>
+        <div class="vd2">
+        <video id="on" controls="" autoplay muted>
+        <source src="Diamond_Platnumz_-_Mdogo_Mdogo__Official_Video_(720p).mp4">
+        </video>
+        </div></div>
+
+
+
+
+    <div class="enduser">
+        <ul>
+        <li><a href="MAINLEO.html">HOME</a></li>
+        </ul>
+        <ul>
+        <li><a href="https://wa.link/4g0k7t">CONTACT</a></li>
+        </ul>
+        <ul>
+        <li><a href="ABOUT.html">ABOUT</a></li>
+        </ul>
+        </ul>
+        
+        <ul>
+        <li><a href="platforms.html">Platforms</a></li>
+        </ul>
+        <ul>
+        <li><a href="">LEO FOUNDATION DEVELOPERS</a></li>
+        </ul>
+        </div>
+    
+
+
+
+    </div>
+
+    <script>
+        var x=window.open();
+        function my(){
+        document.getElementById("dem").style.display="block";
+        document.getElementById("de").style.display="block";
+        document.getElementById("demu").style.display="block";
+        document.getElementById("demi").style.backgroundColor="aliceblue";
+        document.getElementById("demi").style.border="0.6px solid grey";
+        document.getElementById("demi").style.boxShadow="2px 3px 2px gray";
+        document.getElementById("demi").style.overflow="auto";
+        document.getElementById("den").style.display="block";
+        document.getElementById("deno").style.display="block";
+        }
+        function top(){
+        location.assign("tourosm.html");
+        }
+        function m(){
+        document.getElementById("demi").style.display="none";
+        }
+    </script>
 </body>
 </html>
