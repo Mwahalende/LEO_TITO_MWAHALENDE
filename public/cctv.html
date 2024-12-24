@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 <style>
+.but2{
+float:right;
+}
     h1{text-align: center;
     color: blue;}
     h2{
@@ -9,8 +12,9 @@
     }
     .maincont{
         position: relative;
-        height: 1900px;
-        width: 1220px;
+        height: auto;
+        width: 100%;
+        max-width: 1220px;
         display: flex;
         margin: auto;
         border-top: 2px solid rgba(52, 47, 47, 0.877);
@@ -18,7 +22,8 @@
         .one{
            
              height: 600px;
-            width: 330px;
+             width: 100%;
+            max-width: 330px;
             margin: 15px;
             overflow-y: auto;
             color: aliceblue;
@@ -27,12 +32,14 @@
             margin: 20px;
             background-color: rgba(69, 13, 200, 0.516);
             border: 2px solid aliceblue;
-            height: 1800px;
-            width: 900px;
-            margin-bottom: 30px;
+            height: auto;
+            width: 100%;
+            max-width: 900px;
+            
+            
             box-shadow: 2PX 3PX 2PX gray;
             border-bottom: none;
-            overflow:auto;
+            margin-top: 30px;
         }
         ul{
             list-style-type: none;
@@ -43,7 +50,8 @@
             }
     .one11{
             height: 480px;
-            width: 600px;
+            width: 100%;
+            max-width: 600px;
             margin: auto;
             padding: 25px;
             border: gray;
@@ -52,7 +60,8 @@
             }
                 .one11 img{
                 height: 380px;
-                width: 600px;
+                width: 100%;
+                max-width: 600px;
                 
 } 
 ul li{
@@ -90,12 +99,35 @@ left: 10px;
     text-decoration: none;
     font-size: 20px;
 }
+@media only screen and (max-width:768px) {
+.maincont{
+flex-direction: column;
+width: 100%;
+height: 100%;
+}
+.one{
+width: 95%;
+height: 100%;
+}
+.one1{
+width:100%;
+height: 900px;
+}
+.one11{
+width: 100%;
+}
+.one11 img{
+width: 80%;
+}
+}
 </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leo Galaxy</title>
 </head>
 <body>
+    <div class="but2"><button type="button" onclick="mybutton2()" style="background-color: red;color:white;margin:auto;">LEAVE</button></div>
+
 <div class="but1"><button type="button" onclick="mybutton1()"><a href="MAINLEO.html">Home</a></button></div>
 <h1>CCTV CAMERA TECHNOLOGY</h1>
 <h2 style="text-align: center;"> LET US SHARE LITTLE KNOWLEDGE I GOT ABOUT HIKVISION TECHNOLOGY CCTV CAMERA</h2>
@@ -119,21 +151,20 @@ left: 10px;
 <a href=""><h6>CCTV</h6></a>
 <p></p>
 </div><br>
-  <div class="one11" id="3s"><img src="Screenshot (118).png"><br><a href="/Network"><h6>Read notes of Network Design Basics</h6></a>
+  <div class="one11" id="3s"><img src="Screenshot (118).png"><br><a href="http://localhost:5000/Network"><h6>Read notes of Network Design Basics</h6></a>
 <p></p>
 </div><br>
-<div class="one11" id="4s"><img src="Screenshot (119).png"><br><a href="/Analogue"><h6>Read notes 0f OT01 Hikvision Turbo HD Analog Solution</h6></a>
+<div class="one11" id="4s"><img src="Screenshot (119).png"><br><a href="http://localhost:5000/Analogue"><h6>Read notes 0f OT01 Hikvision Turbo HD Analog Solution</h6></a>
     <p></p></div>
-<div class="one11" id="5s"><img src="Screenshot (120).png"><br><a href="/Ipcamera"><h6>Read notes of OT02 Hikvision IP Camera</h6></a>
+<div class="one11" id="5s"><img src="Screenshot (120).png"><br><a href="http://localhost:5000/Ipcamera"><h6>Read notes of OT02 Hikvision IP Camera</h6></a>
  <p></p>
 </div><br>
-<div class="one11" id="6s"><img src="Screenshot (121).png"><br><a href="/NVR"><h6>Read notes of OT03Hikvision NVR Operation</h6></a>
+<div class="one11" id="6s"><img src="Screenshot (121).png"><br><a href="http://localhost:5000/NVR"><h6>Read notes of OT03Hikvision NVR Operation</h6></a>
     <p></p>
     </div><br>
 </div><br>
     </div>
     </div>
-    <div class="but2"><button type="button" onclick="mybutton2()" style="background-color: red;color:white;margin:auto;">LEAVE</button></div>
 <script>
 function clickme(){
 document.getElementById("demo").style.display="block";
