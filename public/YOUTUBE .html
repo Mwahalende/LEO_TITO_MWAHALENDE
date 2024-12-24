@@ -3,7 +3,7 @@
 <head>
 <style>
 body{
-background-color: red;
+background-color: rgb(151, 19, 78);
 }
 h2{
 text-align: center;
@@ -14,21 +14,24 @@ margin: auto;
 .firstv{
 display: flex;
 height: 500px;
-width: 1200px;
+width: 100%;
+max-width: 1200px;
 margin: auto;
 padding: 3px;
 }
 .secondv{
 height: 470px;
-width: 400px;
-background-color:rgb(244, 6, 6);
+width: 100%;
+max-width: 400px;
+background-color:rgb(3, 3, 3);
 margin: 5px;
 border: 1px solid rgb(198, 194, 194);
 border-radius: 10px;
 }
 iframe{
+    width: 100%;
     height: 350px;
-    width: 380px;
+    max-width: 380px;
 }
 h5{
 text-align: center;
@@ -39,7 +42,8 @@ h2{
 background-color: rgba(0, 0, 0, 0);
 color: white;
 text-align: center;
-width: 1200px;
+width: 100%;
+max-width: 1200px;
 margin: auto;
 }
 h2 a{
@@ -57,7 +61,8 @@ color: beige;
 }
 .enduser{
 background-color: blue;
-width: 1200px;
+width: 100%;
+max-width: 1200px;
 margin: auto;
 height: 200px;
 }
@@ -72,7 +77,8 @@ width: 50px;
 height: 20px;
 }
 button{
-width: 90px;
+width: 100%;
+max-width: 90px;
 height: 50px;
 box-shadow: 2px 3px 2px gray;
 font-size: 20px;
@@ -81,7 +87,8 @@ font-size: 20px;
     background-color: black;
     color: white;
     text-align: center;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     height: 60px;
     margin: auto;
     margin-top: 40px;
@@ -93,18 +100,44 @@ color: rgb(255, 217, 0);
 }
 .oneb{
 display: flex;
-width: 1200px;
+width: 100%;
+max-width: 1200px;
 height: 60px;
 margin: auto;
 margin-top: 20px;
 }
 .oneb button{
     position: fixed;
-    width: 90px;
+    width: 100%;
+    max-width: 90px;
     height: 50px;
     box-shadow: 2px 3px 2px gray;
     font-size: 20px;
     z-index: 1;  
+}
+@media only screen and (max-width:768px){
+.firstv{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin: auto;
+}
+.enduser{
+    width: 100%;
+    margin: auto;
+}
+.secondv{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 25px;
+}
+.h1 h2{
+font-size: 25px;
+}
+.oneb{width: 100%;}
+}
+button{
+height: 30px;
 }
 </style>
     <meta charset="UTF-8">
@@ -115,7 +148,7 @@ margin-top: 20px;
     <div class="oneb">
 <button  type="button" onclick="mybutton1()">Back</button>
 <button style="margin-left:1100px" type="button" onclick="mybutton2()">LEAVE</button></div>
-<div class="h1"><h2>YOUTUBE CHANNNELS.</h2></div>
+<div class="h1"><h2>LET US LEARN TOGETHER IN YOUTUBE CHANNNEL.</h2></div>
 <div class="firstv">
 <div class="secondv"> <iframe src="https://youtube.com/embed/LXArnACNsn4?si=CzfNmS52YDFAvjlZ"></iframe>
 <h5>Maana ya jina ALLY</h5>
