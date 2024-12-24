@@ -6,15 +6,17 @@ overflow-y: scroll;
 }
 .top{
 height: 1800px;
-width: 1200px;
+width: 100%;
+max-width: 1200px;
 border: 2px solid rgba(163, 12, 12, 0);
 background-color: rgba(0, 255, 255, 0.904);
 margin: auto;
 padding: auto;
 }
 .one{
-width: 1210px;
-height:auto ;
+width: 100%;
+max-width: 1210px;
+height:100px;
 margin: auto;
 background-color: black;
 border-radius: 5px;
@@ -23,8 +25,9 @@ ul{
 background-color: rgba(0, 0, 0, 0);
 list-style-type: none;
 display: flex;
-width: 1200px;
-height: auto;
+width: 100%;
+max-width: 1200px;
+height: 40px;
 padding-top: 2%;
 padding-bottom: 2%;
 margin: auto;
@@ -47,7 +50,8 @@ z-index: 1;
 }
 .two1{
     background-color: white;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     height: 400px;
     display: flex;
     margin: auto;
@@ -57,7 +61,8 @@ z-index: 1;
 }
 .tw{
 height: 380px;
-width: 300px;
+width: 100%;
+max-width: 300px;
 border: 1px solid rgb(174, 169, 169);
 border-radius: 10px;
 margin: 5px;
@@ -75,7 +80,8 @@ text-align: center;
 }
 .tw1{
     height: 380px;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     border: 1px solid rgb(174, 169, 169);
     border-radius: 10px;
     margin: 5px;
@@ -84,7 +90,7 @@ text-align: center;
 .two2{
         background-color: white;
         width: 1200px;
-        height: 370px;
+        height: auto;
         position: relative;
         display: flex;
         margin: auto;
@@ -109,7 +115,8 @@ text-align: center;
     }
     .two3{
         background-color: rgb(16, 37, 195);
-        width: 1200px;
+        width: 100%;
+        max-width: 1200px;
         height: auto;
         position: relative;
         display: flex;
@@ -122,7 +129,8 @@ text-align: center;
     }
     .tw3{
         height: 390px;
-        width: 400px;
+        width: 100%;
+        max-width: 400px;
         border: 1px solid rgba(174, 169, 169, 0.97);
         border-radius: 10px;
         margin: 5px;
@@ -130,7 +138,8 @@ text-align: center;
         }
 .tw4{
     height: 390px;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     border: 1px solid rgba(174, 169, 169, 0.97);
     border-radius: 10px;
     margin: 5px; 
@@ -138,7 +147,8 @@ text-align: center;
 }
 .tw5{
     height: 390px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     border: 1px solid rgba(174, 169, 169, 0.97);
     border-radius: 10px;
     margin: 5px;
@@ -196,4 +206,61 @@ text-align: center;
 }
 h3{
 text-align: center;
+}
+@media only screen and (max-width:768px){
+.top{
+width: 100%;
+}
+.one{
+width: 100%;
+height: 380px;
+}
+.one ul{
+flex-direction: column;
+text-align: center;
+width: 60%;
+}
+.two{
+width: 100%;
+}
+.two1{
+width: 100%;
+height: auto;
+flex-direction: column;
+}
+.two1 tw1{
+width: 100%;
+margin: auto;
+}
+.two1 .tw{
+width: 100%;
+margin: auto;
+margin-bottom: 20px;
+}
+.two1 .tw img{
+width: 290px;
+}
+.two img{
+width: 96%;
+}
+.two2{
+width: 100%;
+flex-direction: column;
+margin: auto;
+}
+.two2 .tw2{
+width: 100%;
+margin: auto;
+margin-bottom: 25px;
+}
+.two3{
+width: 100%;
+flex-direction: column;
+}
+.two3 .tw3,.tw4,.tw5{
+width: 100%;
+margin: auto;
+margin-top: 20px;
+margin-bottom: 10px;
+}
 }
