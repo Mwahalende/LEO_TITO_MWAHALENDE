@@ -3,21 +3,23 @@
 <head>
     <style>
     .main{
-    height:1700px;
-    width: 1200px;
+    height:100%;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
     background: none;
     border: 0.3x solid rgb(1, 1, 18);
     text-align: center;
-    overflow-y: auto;
-    background-color: rgba(0, 0, 0, 0.763);
+  
+    background-color: black;
     color: aliceblue;
     border-radius: 5px;
     padding-top: 10px;
     }
 
     .main img{
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
     height: 540px;
     margin: auto;
     text-align: center;
@@ -27,7 +29,8 @@
 h1{
 text-align: center;
 color: rgb(13, 9, 228);
-width: 830px;
+width: 100%;
+max-width: 830px;
 margin: auto;
 margin-top: 20px;
 }
@@ -41,8 +44,27 @@ margin: auto;
 h4{
     color: brown;
     text-align: center;
+
     width: 700px;
     margin: auto;
+}
+@media only screen and (max-width:768px) {
+.main{
+width: 100%;
+overflow: hidden;
+height: 100%;
+}
+h2,h3,h4{
+width: 100%;
+margin-top: 30px;
+}
+img{
+width: 100%;
+}
+h1{
+background-color: blue;
+color: aliceblue;
+}
 }
     </style>
     <meta charset="UTF-8">
